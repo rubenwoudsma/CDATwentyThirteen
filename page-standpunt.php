@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Custom post type Standpunt listing page
+ *
+ * The template for displaying specific page regarding the standpunten.
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -21,8 +23,15 @@ get_header(); ?>
 			
 				<!-- BEGIN #content -->
 				<div id="content" role="main">
-
-					<?php while ( have_posts() ) : the_post(); ?>
+				
+					<?php				 
+					echo '<h2>Standpunten - Alfabetische lijst met standpunten</h2>
+ 
+					  <div id="alphaList" align="center">'.get_alphabet_nav('standpunten').'</div><br />';
+					?>
+					<?php 
+					query_posts(array('post_type'=>'standpunt'));
+					while ( have_posts() ) : the_post(); ?>
 
 						<?php get_template_part( 'content', 'page' ); ?>
 

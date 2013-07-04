@@ -2,30 +2,45 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package _s
+ * @package CDATwentyThirteen
+ * @since CDATwentyThirteen 1.0
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<!-- BEGIN #main-container -->
+		<div id="main-container" class="container">
+			
+			<!-- BEGIN #primary -->
+			<div id="primary" class="site-content eleven columns">
+				
+				<!-- BEGIN #content -->
+				<div id="content" role="main" class="">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'single' ); ?>
+					<?php cdatwentythirteen_content_nav( 'nav-above' ); ?>
 
-			<?php _s_content_nav( 'nav-below' ); ?>
+					<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || '0' != get_comments_number() )
-					comments_template();
-			?>
+					<?php cdatwentythirteen_content_nav( 'nav-below' ); ?>
 
-		<?php endwhile; // end of the loop. ?>
+					<?php
+						// If comments are open or we have at least one comment, load up the comment template
+						if ( comments_open() || '0' != get_comments_number() )
+							comments_template( '', true );
+					?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+				<?php endwhile; // end of the loop. ?>
 
-<?php get_sidebar(); ?>
+				</div>
+				<!-- END #content -->
+			</div>
+			<!-- END #primary -->
+		
+			<?php get_sidebar(); ?>
+		
+		</div>
+		<!-- END #main-container -->
+		
 <?php get_footer(); ?>

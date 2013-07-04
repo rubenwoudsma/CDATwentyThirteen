@@ -2,37 +2,54 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package _s
+ * @package CDATwentyThirteen
+ * @since CDATwentyThirteen 1.0
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<!-- BEGIN #main-container -->
+		<div id="main-container" class="container">
+			
+			<!-- BEGIN #primary -->
+			<section id="primary" class="site-content eleven columns">
+				
+				<!-- BEGIN #content -->
+				<div id="content" role="main">
 
-		<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', '_s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+					<!-- BEGIN .page-header -->
+					<header class="page-header">
+						<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'cdatwentythirteen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					</header>
+					<!-- END .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+					<?php cdatwentythirteen_content_nav( 'nav-above' ); ?>
 
-				<?php get_template_part( 'content', 'search' ); ?>
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; ?>
+						<?php get_template_part( 'content', 'search' ); ?>
 
-			<?php _s_content_nav( 'nav-below' ); ?>
+					<?php endwhile; ?>
 
-		<?php else : ?>
+					<?php cdatwentythirteen_content_nav( 'nav-below' ); ?>
 
-			<?php get_template_part( 'no-results', 'search' ); ?>
+				<?php else : ?>
 
-		<?php endif; ?>
+					<?php get_template_part( 'no-results', 'search' ); ?>
 
-		</div><!-- #content -->
-	</section><!-- #primary -->
+				<?php endif; ?>
 
-<?php get_sidebar(); ?>
+				</div>
+				<!-- END #content -->
+			</section>
+			<!-- END #primary -->
+		
+			<?php get_sidebar(); ?>
+		
+		</div>
+		<!-- END #main-container -->
+		
 <?php get_footer(); ?>
