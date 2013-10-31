@@ -220,7 +220,7 @@ function cdatwentythirteen_social_media_icon( $site , $identifier, $title = '' )
 
 	$url = '';
 
-	//If the URL already contains the 'http', not nessesary to go in the the case switch.
+	//If the URL already contains the 'http', not necessary to go in the the case switch.
 	if( strpos( trim( $identifier ) , 'http' ) === 0 ){
 
 		$url = trim( $identifier );
@@ -254,4 +254,116 @@ function cdatwentythirteen_social_media_icon( $site , $identifier, $title = '' )
 
 	?><a href="<?php echo $url; ?>" target="_blank" class="socialmediaitem <?php echo str_replace("-details", "", $site); ?> tooltip-container" title="<?php echo $title; 
 		?>" ><span class="tooltip-anchor icon <?php echo str_replace("-details", "", $site); ?>-icon"></span></a><?php
+}
+
+
+function cdatwentythirteen_the_excerpt_max_charlength($charlength) {
+	$excerpt = get_the_excerpt();
+	$charlength++;
+
+	if ( mb_strlen( $excerpt ) > $charlength ) {
+		$subex = mb_substr( $excerpt, 0, $charlength - 5 );
+		$exwords = explode( ' ', $subex );
+		$excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+		if ( $excut < 0 ) {
+			echo mb_substr( $subex, 0, $excut );
+		} else {
+			echo $subex;
+		}
+		echo '[...]';
+	} else {
+		echo $excerpt;
+	}
+}
+
+function cdatwentythirteen_people_page( $excerpt_length = 420 ) {
+
+	$args = array(
+			  'meta_query' => array (
+				array (
+					'key' => 'usercategory',
+					'value' => array( 'bestuur', 'fractie', 'kandidaat'),
+					'compare' => 'IN'
+				)
+			  ) );		
+
+	$users = get_users( $args );
+
+	$upload_dir = wp_upload_dir();
+	$headingCount = 1;
+	$peopleHTML = "<div id=\"people-page\" class=\"our-people\">\n\n";
+	
+	function do_full_text( $desc ) {
+		$text = nl2br( $desc );
+		return $text;
+	}
+
+	//Loop through all the people in the queue!
+	foreach( $users as $user ) {
+		if( is_numeric( $user->ID ) ) {
+			$person = get_userdata( $user->ID );
+			$description = $person->description;
+			$name = $person->display_name;
+			$link = get_author_posts_url( $user->ID );
+				
+			$noPosts = count_user_posts( $user->ID );
+			$postsLink = !empty( $noPosts ) ? '<a href="'.$link.'#posts" class="posts">' . _e( 'posts', 'cdatwentythirteen' ) . '</a>' : false;
+			// excerpt?
+			if(strlen($description) > $excerpt_length){
+				preg_match( "/^.{1,$excerpt_length}\b/s", $description, $match) ;
+				$bio = nl2br($match[0]);
+				$bio = trim($bio);
+				$bio .= '... <a href="'.$link.'" class="more">' . _e( 'meer', 'cdatwentythirteen' ) . '</a>';
+			} else{ 
+				$bio = do_full_text($description);
+				unset($link);
+			}
+			
+			// return text
+			$peopleHTML .= '<div id="author-'.$user->ID.'" class="person">'."\n";
+			if(!empty($person->photo)){ 
+				$peopleHTML .= '<img src="'.$person->photo.'" alt="'.$name.'" class="photo" />'."\n"; 
+			} elseif($person->userphoto_image_file) {
+				// user photo plugin
+				$peopleHTML .= '<img src="'.$upload_dir['baseurl'].'/userphoto/'.$person->userphoto_image_file.'" alt="'.$name.'" class="photo userphoto" />'."\n";
+			} else {
+				// gravatar
+				$hash = md5( strtolower( trim($person->user_email) ) );
+				$uri = 'http://www.gravatar.com/avatar/' . $hash . '?d=404';
+				$headers = @get_headers($uri);
+				if ( preg_match("|200|", $headers[0]) ) {
+					$peopleHTML .= get_avatar( $person->user_email, $size = '140' );
+				}
+			}
+			
+			$peopleHTML .= '<h3 class="name">';
+			$peopleHTML .= isset($link) ? '<a href="'.$link.'">'.$name.'</a>' : $name;
+			$peopleHTML .= "</h3>\n";
+			$peopleHTML .= !empty($person->title) ? '<div class="title">'.$person->title."</div>\n" : false;
+			if(!empty($postsLink) || !empty($person->user_url)) {
+				$peopleHTML .= '<div class="postsandwebsite"><span class="bracket">[ </span>';
+				$peopleHTML .= !empty($postsLink) ? $postsLink : false;
+				if(!empty($postsLink) && !empty($person->user_url)){ $peopleHTML .= ' <span class="spacer">|</span> '; }
+				$peopleHTML .= !empty($person->user_url) ? '<a href="'.$person->user_url.'" class="website">website</a>' : false;
+				$peopleHTML .= '<span class="bracket"> ]</span></div>'."\n";
+			}
+			
+			if(!empty($bio)) {
+				$peopleHTML .= '<p class="bio">'.$bio."</p>\n";
+			}
+			
+			$peopleHTML .= "</div>\n\n";
+		
+		} else {
+			if($headingCount != 1){ $peopleHTML .= "</span>\n"; }
+			$peopleHTML .= '<h2 class="heading">'.$user->ID.'</h2><span class="heading'.$headingCount.'people">'."\n\n";
+			$headingCount++;
+		}
+	}
+	
+	if($headingCount > 1){ echo "</span>\n"; }
+	$peopleHTML .= "</div>\n\n";
+	
+	return $peopleHTML;
+
 }

@@ -159,7 +159,7 @@ function optionsframework_setdefaults() {
 if ( !function_exists( 'optionsframework_add_page' ) ) {
 
 	function optionsframework_add_page() {
-		$of_page = add_theme_page(__('Theme Options', 'optionsframework'), __('Theme Options', 'optionsframework'), 'edit_theme_options', 'options-framework','optionsframework_page');
+		$of_page = add_theme_page(__('Theme Options', 'cdatwentythirteen'), __('Theme Options', 'cdatwentythirteen'), 'edit_theme_options', 'options-framework','optionsframework_page');
 
 		// Load the required CSS and javscript
 		add_action( 'admin_enqueue_scripts', 'optionsframework_load_scripts');
@@ -238,8 +238,8 @@ function optionsframework_page() {
 			<?php settings_fields('optionsframework'); ?>
 			<?php optionsframework_fields(); /* Settings */ ?>
 			<div id="optionsframework-submit">
-				<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options', 'options_framework_theme' ); ?>" />
-				<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults', 'options_framework_theme' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!', 'options_framework_theme' ) ); ?>' );" />
+				<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options', 'cdatwentythirteen' ); ?>" />
+				<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults', 'cdatwentythirteen' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!', 'options_framework_theme' ) ); ?>' );" />
 				<div class="clear"></div>
 			</div>
 			</form>
@@ -271,7 +271,7 @@ function optionsframework_validate( $input ) {
 	 */
 
 	if ( isset( $_POST['reset'] ) ) {
-		add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.', 'options_framework_theme' ), 'updated fade' );
+		add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.', 'cdatwentythirteen' ), 'updated fade' );
 		return of_get_default_values();
 	}
 	
@@ -325,7 +325,7 @@ function optionsframework_validate( $input ) {
  */
  
 function optionsframework_save_options_notice() {
-	add_settings_error( 'options-framework', 'save_options', __( 'Options saved.', 'options_framework_theme' ), 'updated fade' );
+	add_settings_error( 'options-framework', 'save_options', __( 'Options saved.', 'cdatwentythirteen' ), 'updated fade' );
 }
 
 add_action( 'optionsframework_after_validate', 'optionsframework_save_options_notice' );
@@ -375,7 +375,7 @@ function optionsframework_adminbar() {
 	$wp_admin_bar->add_menu( array(
 			'parent' => 'appearance',
 			'id' => 'of_theme_options',
-			'title' => __( 'Theme Options', 'options_framework_theme' ),
+			'title' => __( 'Theme Options', 'cdatwentythirteen' ),
 			'href' => admin_url( 'themes.php?page=options-framework' )
 		));
 }

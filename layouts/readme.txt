@@ -1,0 +1,1 @@
+Note: this folder is still here due to the fact it came from the _s starters theme.

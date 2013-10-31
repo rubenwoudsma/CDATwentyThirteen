@@ -2,7 +2,7 @@
 /**
  * CDATwentyThirteen - Author profile adjustments
  * -------------------------------------------
- * Seperate file handling all the items for the author profile adjustments.
+ * Separate file handling all the items for the author profile adjustments.
  *
  * @package CDATwentyThirteen
  * @since CDATwentyThirteen 1.0
@@ -39,11 +39,27 @@ function cdatwentythirteen_show_user_profile( $user ) {
 			<td>
 		  <select name="listposition" id="listposition">
 					<?php
-					echo '<option value=""' . (esc_attr(get_the_author_meta('listposition',$user->ID)) == '' ? ' selected="selected"' : '') . '>- Selecteer positie -</option>';
+					echo '<option value=""' . (esc_attr(get_the_author_meta('listposition',$user->ID)) == '' ? ' selected="selected"' : '') . '>-' . _e( 'select list position', 'cdatwentythirteen' ) . ' -</option>';
 
 					for ($i = 1; $i <= 30; $i++)
 					{
 						echo '<option value="' . $i . '" ' . ($i == esc_attr(get_the_author_meta('listposition', $user->ID) ) ? 'selected="selected"' : '') . '>' . $i . '</option>';
+					}
+					?>
+					</select>
+					</td>
+		</tr>
+		<tr>
+			<th><label for="listposition"><?php _e( 'User category', 'cdatwentythirteen' ); ?></label></th>
+			<td>
+		  <select name="usercategory" id="usercategory">
+					<?php
+					echo '<option value=""' . (esc_attr(get_the_author_meta('usercategory',$user->ID)) == '' ? ' selected="selected"' : '') . '>-' . _e( 'select user category', 'cdatwentythirteen' ) . ' -</option>';
+
+					$usercats = $GLOBALS['cdatwentythirteen_author_groups'];
+					foreach ( $usercats as $cat )
+					{
+						echo '<option value="' . $cat . '" ' . ($cat == esc_attr(get_the_author_meta('usercategory', $user->ID) ) ? 'selected="selected"' : '') . '>' . $cat . '</option>';
 					}
 					?>
 					</select>
@@ -74,6 +90,10 @@ function cdatwentythirteen_show_user_profile( $user ) {
 
 			?>
 			</td>
+		</tr>
+		<tr>
+			<th><label for="jobfunction"><?php _e( 'Job or function', 'cdatwentythirteen' ); ?></label></th>
+			<td><input type="text" name="jobfunction" id="jobfunction" value="<?php echo esc_attr(get_the_author_meta('jobfunction', $user->ID ) ); ?>" class="regular-text" /><span class="description"><?php _e( 'The job you have or function you execute within the local department.', 'cdatwentythirteen' ); ?></span></td>
 		</tr>
 		<tr>
 			<th><label for="phonenumber"><?php _e( 'Phone number', 'cdatwentythirteen' ); ?></label></th>
@@ -127,6 +147,8 @@ function cdatwentythirteen_process_option_update( $user_id ) {
 		return false;
 
 	update_user_meta( $user_id, 'listposition', ( isset($_POST['listposition']) ? $_POST['listposition'] : '' ) );
+	update_user_meta( $user_id, 'usercategory', ( isset($_POST['usercategory']) ? $_POST['usercategory'] : '' ) );
+	update_user_meta( $user_id, 'jobfunction', ( isset($_POST['jobfunction']) ? $_POST['jobfunction'] : '' ) );
 	update_user_meta( $user_id, 'phonenumber', ( isset($_POST['phonenumber']) ? $_POST['phonenumber'] : '' ) );
 	update_user_meta( $user_id, 'streetname', ( isset($_POST['streetname']) ? $_POST['streetname'] : '' ) );
 	update_user_meta( $user_id, 'postalcode', ( isset($_POST['postalcode']) ? $_POST['postalcode'] : '' ) );

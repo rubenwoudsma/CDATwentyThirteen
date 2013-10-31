@@ -1,0 +1,1103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CDATwentyThirteen\n"
+"POT-Creation-Date: 2013-10-31 21:54+0100\n"
+"PO-Revision-Date: 2013-10-31 21:54+0100\n"
+"Last-Translator: Ruben Woudsma <ruben.woudsma@gmail.com>\n"
+"Language-Team: Ruben Woudsma <ruben.woudsma@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: D:\\WWW Programming\\_dev\\CDA\\New WordPress"
+"\\cdatwentythirteen\n"
+"X-Poedit-SearchPath-1: D:\\WWW Programming\\_dev\\CDA\\New WordPress"
+"\\cdatwentythirteen\\inc\n"
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/404.php:26
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/404.php:32
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/404.php:40
+msgid "Most Used Categories"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/404.php:49
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/archive.php:29
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/archive.php:32
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/archive.php:39
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/archive.php:47
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/archive.php:50
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/archive.php:53
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/archive.php:56
+#: WordPress\cdatwentythirteen/sidebar.php:19
+msgid "Archives"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/comments.php:41
+#: WordPress\cdatwentythirteen/comments.php:63
+msgid "Comment navigation"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/comments.php:42
+#: WordPress\cdatwentythirteen/comments.php:64
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/comments.php:43
+#: WordPress\cdatwentythirteen/comments.php:65
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/comments.php:76
+msgid "Comments are closed."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-grid.php:21
+msgid "More"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-grid.php:31
+msgid "View"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-grid.php:65
+msgid "Continue Reading"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-page.php:20
+#: WordPress\cdatwentythirteen/content-single.php:27
+#: WordPress\cdatwentythirteen/content.php:39
+#: WordPress\cdatwentythirteen/image.php:112
+msgid "Pages:"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-page.php:21
+#: WordPress\cdatwentythirteen/content-single.php:66
+#: WordPress\cdatwentythirteen/content.php:74
+#: WordPress\cdatwentythirteen/image.php:45
+#: WordPress\cdatwentythirteen/image.php:128
+msgid "Edit"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-single.php:34
+#: WordPress\cdatwentythirteen/content-single.php:37
+#: WordPress\cdatwentythirteen/content.php:49
+#: WordPress\cdatwentythirteen/content.php:59
+msgid ", "
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-single.php:42
+#, php-format
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
+"to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-single.php:44
+#, php-format
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-single.php:50
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/content-single.php:52
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/content.php:17
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/content.php:38
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/content.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/content.php:64
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/content.php:71
+msgid "Leave a comment"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/content.php:71
+msgid "1 Comment"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/content.php:71
+msgid "% Comments"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:100
+msgid "Primary Menu"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:114
+#: WordPress\cdatwentythirteen/functions.php:115
+msgid "Positions"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:117
+msgid "Add New Position"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:118
+msgid "Edit Position"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:119
+msgid "New Position"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:120
+msgid "All Positions"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:121
+msgid "View Positions"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:122
+msgid "Search Positions"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:123
+msgid "No positions found"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:124
+msgid "No positions found in the Trash"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:126
+msgid ""
+"The positions for the local department of the Dutch Christen Democrats (CDA) "
+"which will be used on the website for clear and to the point statements."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:147
+msgid "Manage Subjects"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:148
+msgid "All subjects"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:149
+msgid "Parent subject"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:150
+msgid "Parent subject:"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:151
+msgid "New subject name"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:152
+msgid "Add New Subject"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:153
+msgid "Edit Subject"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:154
+msgid "Update Subject"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:155
+msgid "Separate subjects with commas"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:156
+msgid "Search subjects"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:157
+msgid "Add or remove subjects"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:158
+msgid "Choose from the most used subjects"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:292
+msgid "Sidebar"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:294
+msgid "Main sidebar which can be filled with all the general widgets."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:302
+msgid "Foldout Container"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:304
+msgid ""
+"Sidebar that is being used to display the hidden section in the top of the "
+"website."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:312
+msgid "Footer Left"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:314
+#: WordPress\cdatwentythirteen/functions.php:324
+#: WordPress\cdatwentythirteen/functions.php:334
+msgid "Footer sidebar which is being used in the footer of the website."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:322
+msgid "Footer Center"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/functions.php:332
+msgid "Footer Right"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/header.php:39
+#: WordPress\cdatwentythirteen/inc/extras.php:75
+#: WordPress\cdatwentythirteen\inc/extras.php:75
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/header.php:86
+msgid "Menu"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/header.php:87
+msgid "Skip to content"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/image.php:34
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/image.php:51
+msgid "&larr; Previous"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/image.php:52
+msgid "Next &rarr;"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/image.php:120
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/image.php:122
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/image.php:124
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/image.php:126
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/no-results.php:17
+msgid "Nothing Found"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/no-results.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/no-results.php:29
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/no-results.php:34
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:28
+msgid "One"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:29
+msgid "Two"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:30
+msgid "Three"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:31
+msgid "Four"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:32
+msgid "Five"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:37
+msgid "Six"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:38
+msgid "Nine"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:39
+msgid "Twelve"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:40
+msgid "Fiftheen"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:41
+msgid "Eightheen"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:72
+msgid "Basic Settings"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:77
+#: WordPress\cdatwentythirteen/options.php:169
+msgid "General information"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:78
+msgid ""
+"This section of the theme options lets you customize the basic settings for "
+"the CDA Twenty Thirteen WordPress theme. It handles all the general "
+"information."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:83
+msgid "Show department header"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:84
+msgid "If enabled the department header will be shown on top."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:91
+msgid "Select a featured category"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:92
+msgid ""
+"Select a featured category that will be used within the slider on the front "
+"page."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:99
+msgid "Number of featured posts"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:100
+msgid ""
+"Select the number of featured posts that will be in the slider carousel."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:108
+msgid "Select an expert category"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:109
+msgid ""
+"Select an expert category that will be used within expert section on the "
+"front page."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:116
+msgid "Number of experts to show"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:117
+msgid "Select the number of experts that will be shown on the front page."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:125
+msgid "Department abbreviation"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:126
+msgid ""
+"Provide the department abbreviation code. This normally contains 3 "
+"characters."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:132
+msgid "Enable Fold-out container"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:133
+msgid ""
+"Enable the fold-out container in order to show additional/secret information "
+"on top of the website."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:140
+msgid "Enable Social media buttons"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:141
+msgid ""
+"Enable the social media buttons. These will be shown on top and on several "
+"other parts within the website."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:148
+msgid "Footer left"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:149
+msgid "Text to include on the left side of the footer."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:156
+msgid "Footer right"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:157
+msgid "Text to include on the right side of the footer."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:164
+msgid "Social Media Settings"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:170
+msgid ""
+"This section lets you set and enable the different social media platforms "
+"which can be used on the front end of the website"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:175
+msgid "Twitter"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:176
+msgid "Twitter user name (no @). Used for the social media icon"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:182
+msgid "Facebook"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:183
+msgid "Give the Facebook Page URL or Custom URL."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:189
+msgid "Google Plus"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:190
+msgid "Provide the Google Plus URL which you would like to use."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:196
+msgid "LinkedIn"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:197
+msgid ""
+"Provide the LinkedIn person URL of group URL you would like to refer to."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:204
+msgid "Youtube"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:205
+msgid "Provide the YouTube Username where you would like to link to."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:212
+msgid "Flickr"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:213
+msgid "Provide the Flickr Username where you would like to link to."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:220
+msgid "Vimeo"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:221
+msgid "Provide the Vimeo Username where you would like to link to."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:227
+msgid "Pinterest"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:228
+msgid "Provide the Pinterest Username where you would like to link to."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:234
+msgid "Advanced Settings"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:239
+msgid "Maximum Viewport Scale"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:240
+msgid ""
+"Set the maximum viewport scale. Default is 1, indicating that users can not "
+"pinch and zoom on an iPad. Setting it to 2 will allow zooming to 200%, but "
+"will affect display on rotation."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:248
+msgid "Custom CSS"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/options.php:249
+msgid ""
+"Minor CSS tweaks can be added here. They will be included in the <head> of "
+"your site. For major style adjustments, you should use a child theme."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/search.php:24
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/searchform.php:11
+msgid "Search"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New WordPress\cdatwentythirteen/sidebar.php:26
+msgid "Meta"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:34
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:34
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:34
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:34
+msgid "CDA Author profile - Additional author settings"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:38
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:38
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:38
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:38
+msgid "List position"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:42
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:42
+msgid "select list position"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:53
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:53
+msgid "User category"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:57
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:57
+msgid "select user category"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:69
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:53
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:69
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:53
+msgid "Author subjects"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:88
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:72
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:88
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:72
+msgid "There are no subjects available."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:95
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:95
+msgid "Job or function"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:96
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:96
+msgid "The job you have or function you execute within the local department."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:99
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:79
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:99
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:79
+msgid "Phone number"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:103
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:83
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:103
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:83
+msgid "Street"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:107
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:87
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:107
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:87
+msgid "Postal code"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:111
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:91
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:111
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:91
+msgid "City"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:115
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:95
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:115
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:95
+msgid "Marital Status"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:119
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:99
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:119
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:99
+msgid "Religion"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:123
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:103
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:123
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:103
+msgid "Education"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:127
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:107
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:127
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:107
+msgid "Author Image"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/author-profile-extras.php:132
+#: WordPress\cdatwentythirteen/inc/js/author-profile-extras.php:112
+#: WordPress\cdatwentythirteen\inc/author-profile-extras.php:132
+#: WordPress\cdatwentythirteen\inc/js/author-profile-extras.php:112
+msgid "Enter a URL or upload an image to use in the author profile biography."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-framework.php:162
+#: WordPress\cdatwentythirteen/inc/options-framework.php:378
+#: WordPress\cdatwentythirteen\inc/options-framework.php:162
+#: WordPress\cdatwentythirteen\inc/options-framework.php:378
+msgid "Theme Options"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-framework.php:194
+#: WordPress\cdatwentythirteen\inc/options-framework.php:194
+msgid "Clear"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-framework.php:195
+#: WordPress\cdatwentythirteen\inc/options-framework.php:195
+msgid "Default"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-framework.php:196
+#: WordPress\cdatwentythirteen\inc/options-framework.php:196
+msgid "Select Color"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-framework.php:242
+#: WordPress\cdatwentythirteen\inc/options-framework.php:242
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-framework.php:274
+#: WordPress\cdatwentythirteen\inc/options-framework.php:274
+msgid "Default options restored."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-framework.php:328
+#: WordPress\cdatwentythirteen\inc/options-framework.php:328
+msgid "Options saved."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-media-uploader.php:51
+#: WordPress\cdatwentythirteen\inc/options-media-uploader.php:51
+msgid "No file chosen"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-media-uploader.php:53
+#: WordPress\cdatwentythirteen/inc/options-media-uploader.php:100
+#: WordPress\cdatwentythirteen\inc/options-media-uploader.php:53
+#: WordPress\cdatwentythirteen\inc/options-media-uploader.php:100
+msgid "Upload"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-media-uploader.php:55
+#: WordPress\cdatwentythirteen/inc/options-media-uploader.php:101
+#: WordPress\cdatwentythirteen\inc/options-media-uploader.php:55
+#: WordPress\cdatwentythirteen\inc/options-media-uploader.php:101
+msgid "Remove"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-media-uploader.php:79
+#: WordPress\cdatwentythirteen\inc/options-media-uploader.php:79
+msgid "View File"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:232
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:232
+msgid "No Repeat"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:233
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:233
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:234
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:234
+msgid "Repeat Vertically"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:235
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:235
+msgid "Repeat All"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:248
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:248
+msgid "Top Left"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:249
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:249
+msgid "Top Center"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:250
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:250
+msgid "Top Right"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:251
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:251
+msgid "Middle Left"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:252
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:252
+msgid "Middle Center"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:253
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:253
+msgid "Middle Right"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:254
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:254
+msgid "Bottom Left"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:255
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:255
+msgid "Bottom Center"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:256
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:256
+msgid "Bottom Right"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:269
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:269
+msgid "Scroll Normally"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:270
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:270
+msgid "Fixed in Place"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:344
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:344
+msgid "Normal"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:345
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:345
+msgid "Italic"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:346
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:346
+msgid "Bold"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/options-sanitize.php:347
+#: WordPress\cdatwentythirteen\inc/options-sanitize.php:347
+msgid "Bold Italic"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:39
+#: WordPress\cdatwentythirteen\inc/template-tags.php:39
+msgid "Post navigation"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:49
+#: WordPress\cdatwentythirteen\inc/template-tags.php:49
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:53
+#: WordPress\cdatwentythirteen\inc/template-tags.php:53
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:78
+#: WordPress\cdatwentythirteen\inc/template-tags.php:78
+msgid "Pingback:"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:78
+#: WordPress\cdatwentythirteen/inc/template-tags.php:101
+#: WordPress\cdatwentythirteen\inc/template-tags.php:78
+#: WordPress\cdatwentythirteen\inc/template-tags.php:101
+msgid "(Edit)"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:88
+#: WordPress\cdatwentythirteen\inc/template-tags.php:88
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:91
+#: WordPress\cdatwentythirteen\inc/template-tags.php:91
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:99
+#: WordPress\cdatwentythirteen\inc/template-tags.php:99
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:126
+#: WordPress\cdatwentythirteen\inc/template-tags.php:126
+#, php-format
+msgid ""
+"Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class="
+"\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"byline\"> by "
+"<span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s"
+"\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:132
+#: WordPress\cdatwentythirteen\inc/template-tags.php:132
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:310
+#: WordPress\cdatwentythirteen\inc/template-tags.php:310
+msgid "posts"
+msgstr ""
+
+#: D:\WWW Programming\_dev\CDA\New
+#: WordPress\cdatwentythirteen/inc/template-tags.php:316
+#: WordPress\cdatwentythirteen\inc/template-tags.php:316
+msgid "meer"
+msgstr ""

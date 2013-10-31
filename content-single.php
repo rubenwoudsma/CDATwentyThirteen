@@ -5,31 +5,29 @@
  */
 ?>
 
-<!-- BEGIN #post-<?php the_ID(); ?> -->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<!-- BEGIN .entry-header -->
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-
-		<!-- BEGIN .entry-meta -->
-		<div class="entry-meta">
-			<div class="six columns omega far-edge">
-				<?php cdatwentythirteen_posted_on(); ?>
+		<?php 
+		if ( has_post_thumbnail() ) { 
+			the_post_thumbnail( 'postpage-thumb' ); 
+		} ?>
+		<div id="article-caption">
+			<div class="entry-meta">
+				<div class="datetime">
+				<?php echo esc_html( get_the_date() ); ?>
+				</div>
 			</div>
+			<h1 class="entry-title"><?php the_title(); ?></h1>
 		</div>
-		<!-- END .entry-meta -->
-		
 	</header>
-	<!-- END .entry-header -->
+	<!-- .entry-header -->
 
-	<!-- BEGIN .entry-content -->
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'cdatwentythirteen' ), 'after' => '</div>' ) ); ?>
 	</div>
-	<!-- END .entry-content -->
+	<!-- .entry-content -->
 
-	<!-- BEGIN .entry-meta -->
 	<footer class="entry-meta">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
@@ -67,6 +65,6 @@
 
 		<?php edit_post_link( __( 'Edit', 'cdatwentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer>
-	<!-- END .entry-meta -->
+	<!-- .entry-meta -->
 </article>
-<!-- END #post-<?php the_ID(); ?> -->
+<!-- #post-<?php the_ID(); ?> -->

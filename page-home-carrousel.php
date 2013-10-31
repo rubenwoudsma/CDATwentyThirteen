@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Hom + Carrousel (and grid blocks)
+ * Template Name: Home + Carousel (and grid blocks)
  *
- * This template is used to get the normal starter page of the CDA website template. This will display a image carrousel
+ * This template is used to get the normal starter page of the CDA website template. This will display a image carousel
  * and an overview of the latest news items generated on the website.
  *
  * @package CDATwentyThirteen
@@ -10,19 +10,6 @@
  */
 
 get_header(); 
-
-function cdatwentythirtheen_init_home_template() {
-
-	$dir = get_template_directory_uri().'/';
-
-	//Stylesheets
-	wp_enqueue_style( 'flexslider-css', 	$dir . 'stylesheets/base.css' );
-	//Javascript	
-	wp_enqueue_script( 'flexslider-min', 	$dir . '/js/jquery.flexslider-min.js', array( 'jquery' ), '20130306', true );
-	
-}
-add_action( 'wp_enqueue_scripts', 'cdatwentythirtheen_init_home_template' );
-
 ?>
 		<!-- main-container container -->
 		<div id="main-container" class="container">		
@@ -31,13 +18,13 @@ add_action( 'wp_enqueue_scripts', 'cdatwentythirtheen_init_home_template' );
 				<div id="content" >
 
 					<div id="first-row-container" class="sixteen columns">
-						<div id="slider-container" class="eleven columns alpha">
+						<div id="slider-frontpage" class="slider-container eleven columns alpha">
 						<?php
 						if ( of_get_option('featured_slider_cat') ) {
 							$feature_query = array ( 
 												'cat' 				=> of_get_option( 'featured_slider_cat' ), 
 												'showposts'			=> of_get_option( 'num_featured_posts' ), 
-												'caller_get_posts'	=> 1,
+												'ignore_sticky_posts'	=> 1,
 												'meta_query'		=> array(array('key' => '_thumbnail_id')) 
 											);
 						} else {
@@ -59,9 +46,12 @@ add_action( 'wp_enqueue_scripts', 'cdatwentythirtheen_init_home_template' );
 
 								<?php while( $featured_post_loop->have_posts() ): $featured_post_loop->the_post(); $do_not_duplicate[] = $post->ID; ?>
 
-									<li>
-										<?php the_post_thumbnail('postpage-thumb'); ?>
-										<p class="flex-caption"><?php the_excerpt(); ?></p>
+									<li class="slide">
+										<?php the_post_thumbnail( 'postpage-thumb' ); ?>
+										<div class="flex-caption">
+											<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+											<p class="caption-text"><?php cdatwentythirteen_the_excerpt_max_charlength(150); ?></p>
+										</div>
 									</li>
 									<?php
 									endwhile;
@@ -78,17 +68,7 @@ add_action( 'wp_enqueue_scripts', 'cdatwentythirtheen_init_home_template' );
 						wp_reset_postdata(); 
 						?>
 						</div>
-						<div id="info-container" class="five columns omega">
-						  <div class="featured-links">
-							<ul class="featured-links-list">
-							  <li class="featured-steunons"><a href="/partij/doe-mee/doneren/">Steun ons en doneer</a></li>
-							  <li class="featured-wordlid"><a href="/partij/doe-mee/word-lid/">Word lid</a></li>
-							  <li class="featured-aanmelden"><a href="/partij/doe-mee/aanmelden-als-vrijwilliger/">Aanmelden als vrijwilliger</a></li>
-							  <li class="featured-bestellen"><a href="/contact/cda-webwinkel/" target="_Blanc">Materiaal bestellen</a></li>
-							  <li class="featured-contact"><a href="/contact/">Contact</a></li>
-							</ul>
-						  </div>
-						</div>
+						<?php get_template_part( 'content', 'infobar' ); ?>
 					</div>
 
 					<?php 
@@ -99,7 +79,7 @@ add_action( 'wp_enqueue_scripts', 'cdatwentythirtheen_init_home_template' );
 					 	query_posts( array ( 
 										'cat'				=> of_get_option('expert_category'), 
 										'showposts'			=> of_get_option('num_experts_posts'), 
-										'caller_get_posts'	=> 1, 
+										'ignore_sticky_posts'	=> 1, 
 										'post__not_in'		=> $do_not_duplicate 
 									) 
 						);
@@ -136,5 +116,13 @@ add_action( 'wp_enqueue_scripts', 'cdatwentythirtheen_init_home_template' );
 			<!-- end #primary .site-content -->
 		</div>
 		<!-- end #main-container .container -->
+
+		<script  type="text/javascript">
+		jQuery(document).ready(function() {
+		  jQuery('.flexslider').flexslider({
+		    animation: "slide"
+		  });
+		});
+		</script>
 		
 <?php get_footer(); ?>

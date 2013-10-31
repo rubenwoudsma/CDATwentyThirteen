@@ -49,7 +49,7 @@
 			
 			<div class="container">
 				<?php do_action( 'cdatwentythirteen_credits' ); ?>
-				<div class="eight columns"><?php echo of_get_option( 'footer-left' ); ?></div>
+				<div class="eight columns"><?php cdatwentythirteen_social_media_icons(); echo of_get_option( 'footer-left' ); ?></div>
 				<div class="eight columns far-edge"><?php echo of_get_option( 'footer-right' ); ?></div>
 			</div>
 			
